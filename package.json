@@ -1,0 +1,48 @@
+{
+  "name": "hexo-renderer-ect",
+  "version": "0.1.0",
+  "description": "ECT renderer plugin for Hexo",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sapegin/hexo-renderer-ect.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sapegin/hexo-renderer-ect/issues"
+  },
+  "keywords": [
+    "hexo",
+    "ect",
+    "renderer"
+  ],
+  "author": {
+    "name": "Artem Sapegin",
+    "email": "artem@sapegin.ru",
+    "url": "http://sapegin.me"
+  },
+  "license": {
+    "type": "MIT",
+    "url": "https://raw.github.com/tommy351/hexo/master/LICENSE"
+  },
+  "dependencies": {
+    "ect": "~0.5.9"
+  },
+  "devDependencies": {
+    "chai": "~1.10.0",
+    "coffee-script": "~1.8.0",
+    "jscs": "~1.10.0",
+    "jshint": "~2.5.11",
+    "jshint-stylish": "~1.0.0",
+    "mocha": "~2.1.0"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "jshint": "jshint --reporter node_modules/jshint-stylish/stylish.js index.js",
+    "jscs": "jscs index.js",
+    "mocha": "mocha --reporter spec --compilers coffee:coffee-script/register",
+    "test": "npm run jshint && npm run jscs && npm run mocha"
+  },
+  "homepage": "https://github.com/sapegin/hexo-renderer-ect"
+}
